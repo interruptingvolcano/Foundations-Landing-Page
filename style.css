@@ -2,42 +2,52 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 body {
     font-family: "Poppins";
-    max-width: 800px;
-    
-    margin: auto;
+    margin: 0 auto;
     background-color: #000;
-    padding: 5px 30px;
 }
 
-body .navbar, .hero {
-    margin: 5px 30px;
-}
-
-body .top .container {
-    margin: 5px 30px;
-}
-
-.mid p {
-    margin: 5px 30px;
-}
-
-.copyright {
-    margin: 5px 30px;
-}
-
-.header {
+.header, footer  {
     background-color: #1f2937;
+    
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb
+}
+
+.logo, .nav {
+    margin: 20px 150px
+}
+
+
+
+.sec-text {
+    margin-left: 150px;
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    margin-left: 20px;
 }
 
 .navbar .logo {
@@ -45,13 +55,7 @@ body .top .container {
     color: #f9faf8;
 }
 
-.main-text {
-    font-size: 48px;
-    font-weight: 700;
-    color: #f9faf8;
-}
-
-.hero .sec-text {
+.sec-text {
     font-size: 18px;
     color: #e5e7eb;
 }
@@ -61,31 +65,68 @@ body .top .container {
     height: 360px; 
 }
 
-.top .container {
-    background-color: #fff;
+.main-text {
+    font-size: 48px;
+    font-weight: 700;
+    color: #f9faf8;
+    margin-left: 150px;
 }
 
-
-
-.top img {
-    max-width: 200px;
-    height: 175px;
+.top .container {
+    background-color: #fff;
 }
 
 .top h2 {
     font-size: 36px;
     font-weight: 700;
     color: #1f2937;
+    margin-left: 150px;
+}
+
+.top img {
+    max-width: 200px;
+    height: 175px;
+}
+
+.images {
+    margin-left: 150px
+}
+
+.mid .container {
+    background-color: #e5e7eb;
+    font-size: 25px;
+    font-style: italic;
+    color: #1f2937;
+    height: 300px;
+}
+
+.mid p {
+    margin: 0px 150px;
 }
 
 button {
     color: #fff;
     background-color: #3882f6;
+    margin-left: 150px;
 }
 
 .bottom .container {
     color: #fff;
     background-color: #3882f6;
-    margin: 5px 30px
+   
+}
+
+.bottom p {
+    margin: 0px 150px;
+}
+
+.copyright, .nav {
+    color: #fff;
+    font-size: 10px;
+
+}
+
+.copyright p {
+    height: 60px
 }
 
