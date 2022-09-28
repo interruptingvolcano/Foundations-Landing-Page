@@ -7,7 +7,7 @@
 body { 
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .header, footer  {
@@ -21,7 +21,9 @@ li {
 
 a {
     text-decoration: none;
-    color: #e5e7eb
+    color: #e5e7eb;
+    font-size: 18px;
+    font-weight: 300px;
 }
 
 .logo, .nav {
@@ -50,11 +52,14 @@ a {
 
 .navbar ul li {
     margin-left: 20px;
+    margin-right: 20px
+
 }
 
 .navbar .logo {
-    font-size: 24px;
+    font-size: 26px;
     color: #f9faf8;
+    font-weight: 600;
 }
 
 .sec-text {
@@ -81,7 +86,7 @@ a {
     height: 360px;
     position: relative;
     bottom: 40px;
-    
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);  
 }
 
 .hero .container img {
@@ -99,7 +104,7 @@ a {
 
 .top .container {
     background-color: #fff;
-    height: 350px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,30 +127,29 @@ a {
 .container .images {
     display: flex;
     justify-content: center;
-    padding-bottom: 100px;
+    padding: 0px 100px 100px;
 }
 
-.images p {
-    display: flex;
-    flex-direction: column;
-    max-width: 200px;
-    text-align: center;
+.images img {
+    margin: 10px;
 }
 
 .top img {
     max-width: 200px;
-    height: 150px;
-    border: 3px solid #3882f6;
-    
+    height: 155px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6); 
 }
 
-.top .container p {
-    padding-right: 30px;
-    font-weight: 200;
-   
+.img-container p {
+    max-width: 190px;
+    text-align: center;
+    position: relative;
+    left: .8em;
+    bottom: .25em;
+    padding-left: 5px;
+    font-weight: 300;
 }
-
-
 
 .mid .container  {
     background-color: #e5e7eb;
@@ -185,28 +189,74 @@ a {
 
 button {
     color: #fff;
+    font-size: 20px;
+    text-align: center;
     background-color: #3882f6;
     margin-left: 60px;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    border: 2px solid #fff
+    
 }
 
 .bottom .container {
+    background-color: #fff;
+    height: 375px;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+ .blue-container {
+    width: 1030px;
     color: #fff;
     background-color: #3882f6;
-   
+    height: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-around;
 }
 
-.bottom p {
-    margin: 0px 60px;
+.blue-container p {
+    font-size: 18px;
+    font-weight: 200;
 }
 
-.copyright, .nav {
+.blue-container h2 {
+    font-weight: 500;
+}
+
+.blue-container .left {
+    padding-left: 0px 50px;
+}
+
+
+.nav {
     color: #fff;
     font-size: 10px;
 
 }
 
+.register {
+    margin-bottom: 20px;
+}
+
+
 .copyright p {
-    height: 60px;
-    margin-left: 60px
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    padding: 40px;
+    font-weight: 300;
+}
+
+.copyright span {
+    padding: 8px;
 }
 
