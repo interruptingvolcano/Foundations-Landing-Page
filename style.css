@@ -4,8 +4,8 @@
     padding: 0;
 }
 
-body {
-    font-family: "Poppins";
+body { 
+    font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     background-color: #000;
 }
@@ -25,13 +25,15 @@ a {
 }
 
 .logo, .nav {
-    margin: 20px 150px
+    margin: 20px 60px;
 }
 
-
-
 .sec-text {
-    margin-left: 150px;
+    margin-left: 60px;
+}
+
+.navbar {
+    margin-bottom: 90px
 }
 
 .navbar .container {
@@ -58,56 +60,133 @@ a {
 .sec-text {
     font-size: 18px;
     color: #e5e7eb;
+    line-height: 1.4em;
+}
+
+.left-main {
+    width: 510px
+}
+
+.hero .container {
+    display: flex;
+}
+
+.hero .left-main {
+    display: block;
+    margin-right: 150px;
 }
 
 .hero img {
     max-width: 400px;
-    height: 360px; 
+    height: 360px;
+    position: relative;
+    bottom: 40px;
+    
 }
+
+.hero .container img {
+    margin-bottom: 20px
+}
+
 
 .main-text {
     font-size: 48px;
     font-weight: 700;
     color: #f9faf8;
-    margin-left: 150px;
+    margin-left: 60px;
+    line-height: 60px
 }
 
 .top .container {
     background-color: #fff;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.image-container {
+    margin-bottom: 60px;
 }
 
 .top h2 {
     font-size: 36px;
     font-weight: 700;
     color: #1f2937;
-    margin-left: 150px;
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.container .images {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.images p {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    text-align: center;
 }
 
 .top img {
     max-width: 200px;
-    height: 175px;
+    height: 150px;
+    border: 3px solid #3882f6;
+    
 }
 
-.images {
-    margin-left: 150px
+.top .container p {
+    padding-right: 30px;
+    font-weight: 200;
+   
 }
 
-.mid .container {
+
+
+.mid .container  {
     background-color: #e5e7eb;
-    font-size: 25px;
-    font-style: italic;
-    color: #1f2937;
-    height: 300px;
+    height: 600px; 
+    align-items: center;
+
 }
 
 .mid p {
-    margin: 0px 150px;
+    margin: 0px 160px;
+    font-size: 34px;
+    color: #1f2937;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    padding: 80px 0px 0px 10px;
+    position: relative;
+    top: 8px;
+    line-height: 1.5em
+  
+}
+
+.attrib {
+    font-weight: bold;
+    text-align: right;
+    position: relative; 
+    bottom: 70px;
+    right: 10px;
+    
+}
+
+.mid .attrib p {
+    margin-bottom: 20px;
+    line-height: 0px;
+    height: 0px
 }
 
 button {
     color: #fff;
     background-color: #3882f6;
-    margin-left: 150px;
+    margin-left: 60px;
 }
 
 .bottom .container {
@@ -117,7 +196,7 @@ button {
 }
 
 .bottom p {
-    margin: 0px 150px;
+    margin: 0px 60px;
 }
 
 .copyright, .nav {
@@ -127,6 +206,7 @@ button {
 }
 
 .copyright p {
-    height: 60px
+    height: 60px;
+    margin-left: 60px
 }
 
