@@ -6,13 +6,13 @@
 
 body { 
     font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    background-color: #fff;
+    background-color: #000;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .header, footer  {
-    background-color: #1f2937;
-    
+    background-color: #1f2937; 
 }
 
 li {
@@ -30,6 +30,11 @@ a {
     margin: 20px 60px;
 }
 
+.nav {
+    position: relative;
+    left: 100px
+}
+
 .sec-text {
     margin-left: 60px;
 }
@@ -40,7 +45,7 @@ a {
 
 .navbar .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -60,6 +65,7 @@ a {
     font-size: 26px;
     color: #f9faf8;
     font-weight: 600;
+    margin: 20px
 }
 
 .sec-text {
@@ -74,6 +80,8 @@ a {
 
 .hero .container {
     display: flex;
+    justify-content: space-around;
+
 }
 
 .hero .left-main {
@@ -90,7 +98,13 @@ a {
 }
 
 .hero .container img {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    
+}
+
+.image-container {
+    position: relative;
+    right: 100px;
 }
 
 
@@ -102,17 +116,14 @@ a {
     line-height: 60px
 }
 
+
 .top .container {
     background-color: #fff;
     height: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    
-}
-
-.image-container {
-    margin-bottom: 60px;
+     
 }
 
 .top h2 {
@@ -124,7 +135,7 @@ a {
     padding: 40px;
 }
 
-.container .images {
+.top .container .images {
     display: flex;
     justify-content: center;
     padding: 0px 100px 100px;
@@ -132,6 +143,7 @@ a {
 
 .images img {
     margin: 10px;
+    flex: 1;
 }
 
 .top img {
@@ -153,38 +165,38 @@ a {
 
 .mid .container  {
     background-color: #e5e7eb;
-    height: 600px; 
-    align-items: center;
-
+    height: 400px;
+    
+    
 }
 
 .mid p {
     margin: 0px 160px;
-    font-size: 34px;
+    font-size: 24px;
     color: #1f2937;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    font-weight: 200;
+    font-weight: 300;
     padding: 80px 0px 0px 10px;
     position: relative;
     top: 8px;
-    line-height: 1.5em
-  
-}
+    line-height: 1.5em;
+    min-width: 700px;
 
-.attrib {
-    font-weight: bold;
-    text-align: right;
-    position: relative; 
-    bottom: 70px;
-    right: 10px;
-    
 }
 
 .mid .attrib p {
     margin-bottom: 20px;
     line-height: 0px;
     height: 0px
+}
+
+.attrib {
+    font-weight: bold;
+    text-align: right;
+    position: relative; 
+    bottom: 50px;
+    right: 10px;   
 }
 
 button {
@@ -206,12 +218,11 @@ button {
     background-color: #fff;
     height: 375px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+
 }
 
-
- .blue-container {
-    width: 1030px;
+ .container .blue-container {
     color: #fff;
     background-color: #3882f6;
     height: 150px;
@@ -222,30 +233,34 @@ button {
     justify-content: space-around;
 }
 
+.blue-container .left {
+    padding-left: 60px;
+    
+}
+
 .blue-container p {
     font-size: 18px;
     font-weight: 200;
+    position: relative;
+    
+}
+
+.blue-container .register {
+    margin-right: 70px 
 }
 
 .blue-container h2 {
     font-weight: 500;
 }
 
-.blue-container .left {
-    padding-left: 0px 50px;
-}
-
-
 .nav {
     color: #fff;
     font-size: 10px;
-
 }
 
 .register {
     margin-bottom: 20px;
 }
-
 
 .copyright p {
     height: 100px;
@@ -260,3 +275,43 @@ button {
     padding: 8px;
 }
 
+@media(max-width: 768px) {
+    body {
+        margin: 0;
+    }
+    
+    .navbar .container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 100px;
+    }
+
+    .navbar .logo {
+        position: relative;
+        left: 80px;
+    }
+
+    .hero .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        right: 40px
+    }
+
+    .hero .image-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        align-items: center;
+        position: relative;
+        left: 36px
+    }
+
+    .mid p {
+        position: relative;
+        right: 100px;
+    }
+}
+ 
